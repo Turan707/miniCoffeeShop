@@ -1,8 +1,8 @@
 from django.urls import path
-from .views import greet_api
+from .views import CoffeAPIView
 
 urlpatterns = [
     path(
-        'api/v1/coffees', greet_api
+        'api/v1/coffees', CoffeAPIView.as_view()
     )
 ]
